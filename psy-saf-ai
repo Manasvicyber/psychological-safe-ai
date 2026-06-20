@@ -1,0 +1,12 @@
+forbidden_words = {"overjoyed", "sad", "gloomy", "hate", "guilt", "embarassed", "lonely"}
+
+user_word = input("Type here...:").strip().lower()
+
+
+if user_word in forbidden_words:
+    print("The interaction is overboarding")
+else:
+    pass
+
+
+
