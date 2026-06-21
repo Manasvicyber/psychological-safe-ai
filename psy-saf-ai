@@ -14,11 +14,7 @@ while True:
             found_forbidden = True
             break
 
-     if found_forbidden:
-         print("The interaction is overboarding")
-     else:
-         pass
-
-
-
-
+    if found_forbidden:
+        print("The interaction is overboarding")
+    else:
+        pass
