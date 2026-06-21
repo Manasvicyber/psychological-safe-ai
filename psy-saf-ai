@@ -7,11 +7,11 @@ while True:
         print("Goodbye")
         break
     if not user_word:
-        prin("please enter some text.")
+        print("please enter some text.")
         continue
 
     found_forbidden = False
-    triggered_word = none
+    triggered_word = None
 
     for word in forbidden_words:
         if word in user_word:
