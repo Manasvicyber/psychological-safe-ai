@@ -1,2 +1,24 @@
-print("hellow")
+forbidden_words = {"overjoyed", "sad", "gloomy", "hate", "guilt", "embarrassed", "lonely"}
+
+while True:
+    user_word = input("Type here...(or type 'exit' to quit): ").strip().lower()
+
+    if user_word in {"exit", "quit"}:
+        print("Goodbye")
+        break
+
+    found_forbidden = False
+    triggered_word = None
+
+    for word in forbidden_words:
+        if word in user_word:
+            found_forbidden = True
+            triggered_word = word
+            break
+
+    if found_forbidden:
+        print("The interaction is overboarding")
+    else:
+        pass
+
     
