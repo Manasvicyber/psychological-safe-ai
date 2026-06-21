@@ -6,9 +6,6 @@ while True:
     if user_word in {"exit", "quit"}:
         print("Goodbye")
         break
-    if not user_word:
-        print("please enter some text.")
-        continue
 
     found_forbidden = False
     triggered_word = None
