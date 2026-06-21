@@ -1,17 +1,22 @@
-forbidden_words = {"overjoyed", "sad", "gloomy", "hate", "guilt", "embarassed", "lonely"}
+forbidden_words = {"overjoyed", "sad", "gloomy", "hate", "guilt", "embarrassed", "lonely"}
 
 while True:
-    user_word = input("Type here...(or type exit to quit):").strip().lower()
+    user_word = input("Type here...(or type 'exit' to quit): ").strip().lower()
 
     if user_word in {"exit", "quit"}:
         print("Goodbye")
         break
+    if not user_word:
+        prin("please enter some text.")
+        continue
 
     found_forbidden = False
+    triggered_word = none
 
     for word in forbidden_words:
         if word in user_word:
             found_forbidden = True
+            triggered_word = word
             break
 
     if found_forbidden:
